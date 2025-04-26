@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Page-1" id="e0p6h6tqPudQOgrFy8s6">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry width="150" height="1158" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="566" width="150" height="1158" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="64" y="569" width="663" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="[Password is valid]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="4">
+          <mxGeometry x="30" width="633" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="[Password is invalid]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="4">
+          <mxGeometry y="185" width="663" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="54" y="441" width="713" height="514" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="[Email exists]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="7">
+          <mxGeometry x="30" width="683" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="[Email does not exist]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="7">
+          <mxGeometry y="421" width="713" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="44" y="313" width="733" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="[Input is valid]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="10">
+          <mxGeometry x="30" width="703" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="[Input is invalid]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="10">
+          <mxGeometry y="657" width="733" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="openLoginPage()" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="enterEmailAndPassword(email, password)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="clickLogin()" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="validateInput(email, password)" style="curved=1;endArrow=block;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="692" y="263" />
+              <mxPoint x="692" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="findUserByEmail(email)" style="curved=1;endArrow=block;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="692" y="391" />
+              <mxPoint x="692" y="421" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="checkPassword(email, password)" style="curved=1;endArrow=block;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="692" y="519" />
+              <mxPoint x="692" y="549" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="startSession()" style="curved=1;endArrow=block;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="692" y="647" />
+              <mxPoint x="692" y="677" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="redirectToDashboard()" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="729" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="showErrorMessage(&quot;Email or password incorrect&quot;)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="827" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="showErrorMessage(&quot;Email or password incorrect&quot;)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="935" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="showErrorMessage(&quot;Input fields cannot be empty or incorrect format&quot;)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="1043" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
